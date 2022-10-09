@@ -1,8 +1,33 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  height: 100%;
+  width: 100%;
+
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  background: linear-gradient(to left, #acb6e5, #86fde8);
+  padding: 1.5em 2em;
+
+  color: #4d4d4d;
+}
+
+#heading{
+  text-align: center;
+  font-size: 2.5em;
+}
+
 .naming_conversion {
-  margin: 2em;
-  padding: 1.4em;
-  background: tomato;
-  border-radius: 16px;
+  margin-top: 2em;
+  /* padding: 1.4em; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -10,12 +35,11 @@
 }
 
 .naming_conversion .cases_div {
-  border-radius: 16px;
   padding: 0.7em;
 }
 
 .naming_conversion #text {
-  margin: 0em 0em 1.4em;
+  margin: 0em 0em 0.25em;
   outline: 0;
   border-radius: 16px;
   box-shadow: none;
@@ -31,35 +55,76 @@
 }
 
 .case_div {
-  width: 100%;
-  background-color: cadetblue;
+  background-color: #e4e5e68e;
   border-radius: 12px;
   margin: 0.5em 0em;
-  padding: 0.5em;
+  padding: 0.75em;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border: none;
+
+  box-shadow: 3px 3px 5px;
+ 
 }
 
 .case_div h1 {
-  font-size: 1em;
+  font-size: 1.1em;
   font-weight: 500;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  padding: 0em;
-  margin: 0em;
-}
-
-.case_div p {
-  font-size: 1.2em;
-  font-weight: bold;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   padding: 0em;
   margin: 0em;
   color: black;
 }
 
+.case_div p {
+  font-size: 1.1em;
+  font-weight: 500;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  padding: 0em 0.25em;
+  margin: 0em;
+  color: #5433FF;
+}
+
 #convert-btn {
   outline: none;
-  box-shadow: none;
   border: none;
   border-radius: 12px;
   padding: 0.3em 1.4em;
   cursor: pointer;
+  font-size: 1.25em;
+  font-weight: 700;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin-left: 1em;
+  box-shadow: 3px 3px 5px;
+
+  color: #4d4d4d;
+}
+
+#text{
+  font-size: 1.25em;
+  min-width: 350px;
+
+}
+
+#contact{
+  display: flex;
+  /* flex-direction: column; */
+  gap: 1em;
+  margin-top: 1.25em;
+  justify-content: center;
+  align-items: center;
+}
+
+#contact h1{
+  font-size: 2em;
+}
+
+.connect-div{
+  display: flex;
+  gap: 2em;
+}
+
+img {
+  filter: invert(75%);
 }
